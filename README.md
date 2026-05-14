@@ -2,7 +2,7 @@
 
 Website profil resmi SDN 15 Buton Pasarwajo, hasil modifikasi total dari template [School Profile Website](https://github.com/Shizu-ka/School-Profile-Website) oleh Shizu-ka (TemplateMo 557 Grad School).
 
-**Live Demo:** https://sdn15-buton.netlify.app
+**Live Demo:** [https://sdn15-buton.netlify.app](https://sdn15buton.netlify.app/)
 
 ---
 
