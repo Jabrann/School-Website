@@ -1,0 +1,601 @@
+/* TemplateMo 557 Grad School - Responsive Fix by Meta AI */
+@import url('fontawesome.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Montserrat',sans-serif;margin:0;overflow-x:hidden;background:#172238}
+img,video,iframe{max-width:100%;height:auto;display:block}
+
+/* Basic */
+a{color:#3CF;text-decoration:none}
+a:hover{color:#FC3}
+ul{padding:0;margin:0;list-style:none}
+p{font-size:14px;line-height:24px}
+
+.section-heading{text-align:center;margin-bottom:70px}
+.section-heading h2:before{width:1px;height:100px;background:rgba(250,250,250,.1);position:absolute;top:-102px;content:'';left:50%;transform:translateX(-50%)}
+.section-heading h2{margin-top:100px;position:relative;font-size:clamp(16px,2.5vw,18px);font-weight:500;color:#fff;letter-spacing:.5px;display:inline-block;padding:15px 20px;border:2px solid rgba(250,250,250,.1)}
+
+/* Buttons */
+.main-button a{background:#f5a425;color:#fff;font-size:13px;text-transform:uppercase;letter-spacing:.5px;font-weight:700;padding:12px 20px;display:inline-block;border-radius:3px;transition:.3s}
+.main-button a:hover{background:#e0941e}
+a.menu-link{display:none}
+
+/* Header */
+.main-header{background:rgba(22,34,57,.95);height:80px;position:fixed;z-index:12;width:100%;top:0;backdrop-filter:blur(6px)}
+.main-header .logo{float:left;line-height:80px;padding-left:60px}
+.main-header .logo a{font-size:clamp(24px,4vw,36px);text-transform:uppercase;font-weight:800;color:#fff}
+.main-header .logo a em{font-style:normal;color:#f5a425}
+.main-menu{float:right;padding-right:60px}
+.main-menu li{display:inline-block;line-height:79px;margin-left:15px;position:relative}
+.main-menu li a{padding:10px 15px;font-size:13px;text-transform:uppercase;letter-spacing:.5px;font-weight:700;color:#fff;border:2px solid transparent;transition:.5s}
+.main-menu li .sub-menu{position:absolute;width:180px;background:#18233a;opacity:0;visibility:hidden;transition:.3s;top:100%;left:0}
+.main-menu li:hover .sub-menu{opacity:1;visibility:visible}
+.main-nav li:hover a,.main-nav li.active a{border:2px solid #f5a425}
+
+/* Banner */
+.main-banner{position:relative;height:100vh;overflow:hidden}
+#bg-video{width:100%;height:100%;object-fit:cover}
+.video-overlay{position:absolute;inset:0;background:rgba(34, 44, 53, 0.85)}
+.main-banner .caption{text-align:center;position:absolute;width:min(90%,800px);left:50%;top:50%;transform:translate(-50%,-50%);padding:0 15px}
+.main-banner .caption h6{margin:0 0 20px;font-size:clamp(14px,2vw,18px);text-transform:uppercase;font-weight:600;color:#fff;letter-spacing:1px}
+.main-banner .caption h2{margin:20px 0 5px;font-size:clamp(32px,7vw,64px);text-transform:uppercase;font-weight:800;color:#fff;line-height:1.1}
+.main-banner .caption h2 em{font-style:normal;color:#f5a425;font-weight:900}
+
+
+/* Features */
+.features-post{position:relative}
+.features-thumb img{width:100%;transition:transform .4s}
+.features-post:hover .features-thumb img{transform:scale(1.05)}
+.features-content{position:absolute;bottom:0;left:0;width:100%;background:#0c1228;color:#fff;padding:30px;transition:.3s}
+.features-content:hover{background:#f5a425;box-shadow:0 0 30px rgba(0,0,0,.5)}
+.features-content h4{font-size:16px;text-transform:uppercase;font-weight:700;margin:0}
+.features-content h4 i{margin-right:12px;font-size:22px}
+
+/* Video / TikTok */
+section.video{background:url(../images/video-bg.jpg) no-repeat center/cover #172238;padding:80px 0}
+section.video .left-content{color:#fff}
+section.video .left-content h4{font-size:clamp(22px,3.5vw,30px);font-weight:800;line-height:1.3;margin:20px 0}
+section.video .left-content h4 em{font-style:normal;color:#f5a425}
+.video-item{position:relative;width:100%;max-width:600px;margin:0 auto}
+.video-item figure iframe,
+.video-item .tiktok-embed{width:100%!important;aspect-ratio:9/16;max-height:580px;border:none}
+.video-item .video-caption{position:absolute;bottom:0;width:100%;background:rgba(250,250,250,.9);padding:12px 18px}
+.video-item .video-caption h4{margin:0;font-size:clamp(14px,2vw,18px);font-weight:700;text-transform:uppercase}
+
+/* Tabs, Courses, Coming Soon */
+#tabs ul{column-count:3;column-gap:0}
+section.coming-soon{padding:100px 0}
+section.coming-soon .continer .counter,
+section.coming-soon .container .counter{display:flex;gap:4%;flex-wrap:wrap}
+section.coming-soon .continer .counter>div{flex:1 1 22%;min-width:70px;height:120px;background:rgba(250,250,250,.1);color:#fff;font-size:clamp(28px,5vw,48px);font-weight:800;display:flex;flex-direction:column;justify-content:center;text-align:center}
+
+/* Forms & Footer */
+section.contact form,section.coming-soon form{background:rgba(250,250,250,.1);padding:30px}
+section.contact form input,section.contact form textarea{width:100%;background:rgba(250,250,250,.1);border:none;color:#fff;padding:12px;margin-bottom:20px}
+footer{background:#152036;text-align:center}
+footer p{margin:0;padding:25px 15px;color:#fff;font-size:13px;text-transform:uppercase;font-weight:600}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1180px){.main-header .logo{padding-left:30px}.main-menu{padding-right:30px}}
+@media(max-width:992px){.features-content{position:relative;padding:25px}#tabs ul{column-count:2}}
+@media(max-width:950px){
+  a.menu-link{display:block;float:right;font-size:32px;color:#fff;padding:18px 25px 0 0}
+  nav[role="navigation"]{clear:both;max-height:0;overflow:hidden;transition:.3s}
+  nav[role="navigation"].active{max-height:100vh;overflow-y:auto}
+  nav[role="navigation"] ul{width:100%;background:rgba(22,34,57,.99)}
+  nav[role="navigation"] li{display:block;margin:0}
+  nav[role="navigation"] li a{display:block;padding:15px;text-align:center;border-bottom:1px solid rgba(250,250,250,.25)}
+  .main-nav li:hover a,.main-nav li.active a{border-color:transparent;color:#f5a425}
+  .main-menu{float:none;padding:0!important}
+}
+@media(min-width:951px){.js nav[role="navigation"]{max-height:none}nav[role="navigation"] li{display:inline-block}}
+@media(max-width:767px){
+  .main-header{height:70px}.main-header .logo{line-height:70px;padding-left:20px}
+  section.video .left-content{text-align:center;margin-bottom:35px}
+  #tabs ul{column-count:1}.tabs-content{text-align:center}
+  .video-item .tiktok-embed{aspect-ratio:9/16}
+}
+@media(max-width:480px){p{font-size:13px}.main-button a{padding:10px 16px;font-size:12px}}
+/* ===== FIX KHUSUS CONTACT SECTION ===== */
+section.contact {
+  padding: 80px 0 100px !important;
+  background-color: #172238;
+}
+section.contact .section-heading {
+  margin-bottom: 50px;
+}
+section.contact .section-heading h2 {
+  margin-top: 0 !important;
+}
+
+/* form kiri */
+section.contact form {
+  background: rgba(0,0,0,0.25) !important;
+  padding: 35px !important;
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+}
+section.contact form input,
+section.contact form textarea {
+  width: 100% !important;
+  background: rgba(255,255,255,0.09) !important;
+  border: 1px solid rgba(255,255,255,0.2) !important;
+  color: #fff !important;
+  padding: 14px 15px !important;
+  font-size: 14px !important;
+  border-radius: 5px !important;
+  margin-bottom: 18px !important;
+}
+section.contact form input::placeholder,
+section.contact form textarea::placeholder {
+  color: rgba(255,255,255,0.65) !important;
+}
+
+/* tombol whatsapp */
+section.contact form button#form-submit {
+  background: #f5a425 !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 12px 22px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: .2s;
+}
+section.contact form button#form-submit:hover {
+  background: #e0941e !important;
+}
+section.contact form button#form-submit img {
+  width: 18px;
+  height: 18px;
+}
+
+/* maps kanan - kembalikan tinggi aslinya */
+#map iframe {
+  width: 100% !important;
+  height: 422px !important;
+  border: 0 !important;
+  border-radius: 8px;
+  display: block;
+}
+
+/* perbaikan global: jangan paksa iframe jadi auto */
+iframe { max-width: 100%; }
+img, video { height: auto; max-width: 100%; }
+
+/* ===== FIX SECTION VIDEO TIKTOK ===== */
+section.video {
+  padding: 80px 0 !important;
+}
+section.video .left-content {
+  padding-right: 30px;
+}
+
+/* hilangkan absolute yang bikin berantakan */
+section.video .video-item {
+  position: relative;
+  max-width: 380px;   /* lebar ideal untuk profil TikTok */
+  margin: 0 auto;
+  background: transparent;
+}
+section.video .video-item .video-caption {
+  position: static !important;
+  background: #f5a425 !important;
+  color: #fff !important;
+  text-align: center;
+  padding: 12px 15px !important;
+  margin: 0 0 15px 0 !important;
+  border-radius: 6px;
+  height: auto !important;
+  width: 100% !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+section.video .video-item .video-caption h4 {
+  margin: 0 !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+  color: #fff !important;
+  text-transform: uppercase;
+}
+
+/* bungkus embed biar rapi */
+section.video .video-item figure {
+  background: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+  margin: 0;
+}
+section.video .video-item .tiktok-embed {
+  margin: 0 auto !important;
+  max-width: 100% !important;
+  min-width: unset !important;
+}
+
+/* HP: biar full width */
+@media (max-width: 767px) {
+  section.video .left-content {
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  section.video .video-item {
+    max-width: 340px;
+  }
+}
+
+/* ===== FIX TABS "KENAPA MEMILIH" ===== */
+#tabs {
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+#tabs > ul {
+  display: flex !important;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 0 0 50px 0 !important;
+  padding: 0 !important;
+  column-count: unset !important; /* hapus yang bikin pecah */
+}
+#tabs > ul li {
+  list-style: none;
+  display: block !important;
+}
+#tabs > ul li a {
+  display: block;
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0 5px 28px 5px;
+  position: relative;
+  text-decoration: none !important;
+  transition: 0.3s;
+}
+#tabs > ul li a:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+#tabs > ul li a:before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: -7px;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+#tabs > ul li.ui-tabs-active a,
+#tabs > ul li a:hover {
+  color: #f5a425 !important;
+}
+#tabs > ul li.ui-tabs-active a:after {
+  background: #f5a425;
+  width: 14px;
+  height: 14px;
+}
+#tabs > ul li.ui-tabs-active a:before {
+  border-color: #f5a425;
+}
+
+/* konten tab */
+.tabs-content {
+  margin-top: 30px;
+  text-align: left;
+}
+.tabs-content .row {
+  align-items: center;
+}
+#tabs .tabs-content h4 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 18px;
+}
+#tabs .tabs-content p {
+  color: rgba(255,255,255,0.85);
+  font-size: 15px;
+  line-height: 28px;
+  margin: 0;
+}
+.tabs-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  padding: 0 !important;
+}
+
+/* sembunyikan panel yang tidak aktif (jaga-jaga) */
+#tabs .ui-tabs-panel { display: none !important; }
+#tabs .ui-tabs-panel[aria-hidden="false"] { display: block !important; }
+
+/* HP */
+@media (max-width: 767px) {
+  #tabs > ul { gap: 20px; margin-bottom: 30px !important; }
+  #tabs > ul li a { font-size: 12px; padding-bottom: 24px; }
+  .tabs-content { text-align: center; }
+  #tabs .tabs-content h4 { font-size: 22px; margin-top: 25px; }
+}
+
+/* ===== HP: FEATURES JANGAN GEDE NUTUPIN ===== */
+@media (max-width: 767px) {
+  section.features {
+    padding: 15px 0 25px !important;
+    background: #0c1228;
+  }
+  /* bikin 3 box jadi bisa geser kiri-kanan, bukan numpuk ke bawah */
+  section.features .container { padding: 0; }
+  section.features .row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 12px;
+    padding: 0 15px 10px;
+    margin: 0;
+  }
+  section.features .row::-webkit-scrollbar { display: none; }
+  
+  section.features .col-lg-4,
+  section.features .col-12 {
+    flex: 0 0 68%;
+    max-width: 68%;
+    padding: 0;
+  }
+
+  .features-post .features-content {
+    min-height: 110px !important;
+    padding: 16px 12px !important;
+    border-radius: 8px !important;
+  }
+  .features-content h4 {
+    font-size: 12px !important;
+    line-height: 1.3;
+  }
+  .features-content h4 i {
+    font-size: 22px !important;
+    margin: 0 0 6px 0 !important;
+    display: block;
+  }
+  /* pas kebuka, batasi tinggi biar ga nutupin */
+  .features-content .content-hide {
+    max-height: 110px;
+    overflow-y: auto;
+    margin-top: 8px !important;
+  }
+  .features-content .content-hide p {
+    font-size: 12px !important;
+    line-height: 17px !important;
+  }
+}
+
+/* HP kecil banget */
+@media (max-width: 380px) {
+  section.features .col-lg-4,
+  section.features .col-12 {
+    flex: 0 0 78%;
+    max-width: 78%;
+  }
+}
+
+/* === FIX MATA PELAJARAN HP (screenshot kamu) === */
+@media (max-width: 767px) {
+  section.courses {
+    padding: 50px 0 70px !important;
+    background: #172238 !important;
+  }
+  section.courses .section-heading {
+    margin-bottom: 30px !important;
+  }
+  section.courses .section-heading h2 {
+    margin-top: 30px !important;
+    padding: 12px 18px !important;
+    font-size: 16px !important;
+  }
+
+  /* carousel */
+  section.courses .owl-carousel {
+    padding: 0 15px !important;
+  }
+  section.courses .owl-stage {
+    display: flex !important;
+  }
+  section.courses .item {
+    width: 100% !important;
+    background: transparent !important;
+  }
+
+  /* gambar jangan kepanjangan */
+  section.courses .item img {
+    height: 180px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    border-radius: 12px 12px 0 0 !important;
+    display: block !important;
+  }
+
+  /* INI YANG HILANG DI SCREENSHOT - box putih */
+  section.courses .item .down-content {
+    background: #ffffff !important;
+    padding: 15px 10px !important;
+    text-align: center !important;
+    border-radius: 0 0 12px 12px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+    position: relative !important;
+    z-index: 5 !important;
+    margin-top: 0 !important;
+  }
+  section.courses .item .down-content h4 {
+    color: #1e1e1e !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    text-transform: uppercase !important;
+  }
+
+  /* dots biar kelihatan */
+  .owl-dots { margin-top: 25px !important; text-align: center !important; }
+  .owl-dot span { background: rgba(255,255,255,0.5) !important; }
+  .owl-dot.active span { background: #f5a425 !important; }
+}
+
+/* ===== FIX MATA PELAJARAN DESKTOP (yang hilang di screenshot) ===== */
+section.courses {
+  background: #172238 url(../images/choosing-bg.jpg) center/cover no-repeat !important;
+  padding: 80px 20px 100px !important;
+}
+section.courses .owl-carousel .owl-stage-outer {
+  padding: 10px 0 20px;
+}
+section.courses .item {
+  margin: 0 8px;
+}
+section.courses .item img {
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover !important;
+  border-radius: 8px 8px 0 0 !important;
+  display: block !important;
+}
+section.courses .item .down-content {
+  background: #ffffff !important;
+  padding: 16px 12px !important;
+  text-align: center !important;
+  border-radius: 0 0 8px 8px !important;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15) !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+section.courses .item .down-content h4 {
+  color: #1e1e1e !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  line-height: 1.3 !important;
+}
+
+/* biar rapi di layar lebar */
+@media (min-width: 768px) {
+  section.courses .item img { height: 210px !important; }
+}
+
+/* ===== FIX FINAL FEATURES HP - tidak kepotong & tidak panjang ===== */
+@media (max-width: 767px) {
+  section.features {
+    padding: 8px 0 15px !important;
+    background: #0c1228 !important;
+  }
+  /* matikan scroll horizontal, bikin 3 kolom pas */
+  section.features .container { padding: 0 8px !important; }
+  section.features .row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  section.features .col-lg-4,
+  section.features .col-12 {
+    flex: 0 0 calc(33.333% - 4px) !important;
+    max-width: calc(33.333% - 4px) !important;
+    padding: 0 !important;
+  }
+
+  .features-post .features-content {
+    position: relative !important;
+    min-height: auto !important;
+    padding: 10px 4px !important;
+    background: #162239 !important;
+    border-radius: 6px !important;
+    text-align: center !important;
+  }
+  .features-content h4 {
+    font-size: 9px !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+    margin: 0 !important;
+  }
+  .features-content h4 i {
+    display: block !important;
+    font-size: 18px !important;
+    margin: 0 0 4px 0 !important;
+  }
+  /* sembunyikan teks panjang di HP */
+  .features-content .content-hide,
+  .features-content p {
+    display: none !important;
+  }
+
+  /* potong jarak kosong ke "Kenapa Memilih" */
+  .section-heading h2 {
+    margin-top: 35px !important;
+  }
+  .section-heading h2:before {
+    height: 40px !important;
+    top: -42px !important;
+  }
+}
+
+/* ===== TIKTOK JANGAN KEPANJANGAN ===== */
+section.video .video-item {
+  max-width: 360px !important;
+  margin: 0 auto !important;
+}
+section.video .video-item figure {
+  background: #fff !important;
+  padding: 10px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3) !important;
+  max-height: 420px !important;   /* potong di sini */
+  overflow: hidden !important;
+  position: relative !important;
+}
+section.video .video-item .tiktok-embed {
+  max-height: 400px !important;
+  overflow-y: auto !important;
+  margin: 0 !important;
+  /* hilangkan scrollbar jelek */
+  scrollbar-width: thin;
+}
+section.video .video-item .tiktok-embed::-webkit-scrollbar {
+  width: 4px;
+}
+section.video .video-item .tiktok-embed::-webkit-scrollbar-thumb {
+  background: #f5a425;
+  border-radius: 2px;
+}
+
+/* HP lebih pendek lagi */
+@media (max-width: 767px) {
+  section.video .video-item figure {
+    max-height: 360px !important;
+  }
+  section.video .video-item .tiktok-embed {
+    max-height: 340px !important;
+  }
+}
