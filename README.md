@@ -2,7 +2,7 @@
 
 Website profil resmi SDN 15 Buton Pasarwajo, hasil modifikasi total dari template [School Profile Website](https://github.com/Shizu-ka/School-Profile-Website) oleh Shizu-ka (TemplateMo 557 Grad School).
 
-**Live Demo:** https://sdn15-buton.netlify.app *(ganti dengan link Netlify kamu)*
+**Live Demo:** https://sdn15-buton.netlify.app
 
 ---
 
@@ -26,7 +26,6 @@ Template aslinya pecah di HP, loading berat, dan banyak fitur tidak kepakai. Say
 - Video background pakai tag `<video>` native (tanpa plugin berat)
 
 ### 3. Fitur Baru
-- **Form WhatsApp langsung:** tombol "Kirim via WhatsApp" mengirim data form ke nomor sekolah
 - **TikTok embed:** profil sekolah langsung di homepage
 - **Siap Netlify:** tidak perlu build step, tinggal push
 
